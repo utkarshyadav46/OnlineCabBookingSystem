@@ -1,0 +1,774 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "login";
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+echo "hwee";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Go Taxi a Travel Category Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="Go Taxi Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- gallery -->
+<link href='css/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+<!-- //gallery -->
+<!-- font -->
+<link href="//fonts.googleapis.com/css?family=Arvo:400,400i,700,700i" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<!-- //font -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script> 
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+	<!-- banner -->
+	<div class="banner jarallax">
+		<div class="header">
+			<div class="header-left">
+				<div class="agileinfo-phone">
+					<p><i class="fa fa-volume-control-phone" aria-hidden="true"></i>7052539922,7690863475</p>
+				</div>
+				<div class="agileinfo-phone agileinfo-map">
+					<p><i class="fa fa-map-marker" aria-hidden="true"></i>HOSTEL NO. 4 MNIT JAIPUR </p>
+				</div>
+				<div class="search-grid">
+					<form action="#" method="post">
+						<input type="text" placeholder="Search" class="big-dog" name="Subscribe" required="">
+						<button class="btn1"><i class="fa fa-search" aria-hidden="true"></i></button>
+					</form>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="w3-header-bottom">
+			<div class="w3layouts-logo">
+				<h1>
+					<a href="index.html">TAXiWALE</a>
+				</h1>
+			</div>
+			<div class="top-nav">
+						<nav class="navbar navbar-default">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li class="first-list"><a class="active" href="index.html">Home</a></li>
+									<li><a href="#about" class="scroll">About</a></li>
+									<li><a href="#gallery" class="scroll">Gallery</a></li>
+									<li><a href="#team" class="scroll">Team</a></li>
+									<li><a href="#blog" class="scroll">Customers</a></li>
+									<li><a href="#rate" class="scroll">Drivers</a></li>
+									<li><a href="#contact" class="scroll">Contact</a></li>
+								</ul>	
+								<div class="clearfix"> </div>
+							</div>	
+						</nav>		
+			</div>
+			<div class="agileinfo-social-grids">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-rss"></i></a></li>
+					<li><a href="#"><i class="fa fa-vk"></i></a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="banner-info">
+			<div class="container">
+				<div class="w3-banner-info">
+					<div class="slider">
+						<div class="callbacks_container">
+							<ul class="rslides callbacks callbacks1" id="slider4">
+								<li>
+									<div class="w3layouts-banner-info">
+										<h3>Lorem<span>CHLO</span>.com</h3>
+										<p>Lorem ipsum dolor sit amet</p>
+										<div class="w3ls-button">
+											<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="w3layouts-banner-info">
+										<h3>COMFORT<span>TAXIWALE.com</span>SAFETY</h3>
+										<p>Fusce varius id lectus at</p>
+										<div class="w3ls-button">
+											<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+									<script>
+										// You can also use "$(window).load(function() {"
+										$(function () {
+										  // Slideshow 4
+										  $("#slider4").responsiveSlides({
+											auto: true,
+											pager:true,
+											nav:false,
+											speed: 400,
+											namespace: "callbacks",
+											before: function () {
+											  $('.events').append("<li>before event fired.</li>");
+											},
+											after: function () {
+											  $('.events').append("<li>after event fired.</li>");
+											}
+										  });
+									
+										});
+									 </script>
+									<!--banner Slider starts Here-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+	<!-- modal -->
+	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header"> 
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+					<h4 class="modal-title">Go Taxi</h4>
+				</div> 
+				<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/4.jpg" alt="" />
+						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.  Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- welcome -->
+	<div class="welcome">
+		<div class="container">
+			<div class="wthree-heading">
+				<h2>Welcome</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at nisi velit. Ut id velit ex. Donec quis sapien gravida, rutrum metus eu, viverra elit. Sed sodales commodo ex, id porttitor leo ullamcorper nec.</p>
+			</div>
+			<div class="w3-welcome-grids">
+				<div class="col-md-3 w3-welcome-grid">
+					<div class="w3-welcome-grid-info">
+						<img src="images/3.jpg" alt="" />
+						<h4>Sed ac metus luctus</h4>
+						<p>Mauris viverra tortor leo, ut hendrerit arcu varius sit amet. In vitae libero at velit venenatis gravida.</p>
+					</div>
+				</div>
+				<div class="col-md-3 w3-welcome-grid">
+					<div class="w3-welcome-grid-info">
+						<img src="images/4.jpg" alt="" />
+						<h4>Sed ac metus luctus</h4>
+						<p>Mauris viverra tortor leo, ut hendrerit arcu varius sit amet. In vitae libero at velit venenatis gravida.</p>
+					</div>
+				</div>
+				<div class="col-md-3 w3-welcome-grid">
+					<div class="w3-welcome-grid-info">
+						<img src="images/5.jpg" alt="" />
+						<h4>Sed ac metus luctus</h4>
+						<p>Mauris viverra tortor leo, ut hendrerit arcu varius sit amet. In vitae libero at velit venenatis gravida.</p>
+					</div>
+				</div>
+				<div class="col-md-3 w3-welcome-grid">
+					<div class="w3-welcome-grid-info">
+						<img src="images/6.jpg" alt="" />
+						<h4>Sed ac metus luctus</h4>
+						<p>Mauris viverra tortor leo, ut hendrerit arcu varius sit amet. In vitae libero at velit venenatis gravida.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //welcome -->
+	<!-- about-bottom -->
+	<div class="about-bottom jarallax" id="about">
+		<!-- container -->
+		<div class="container">
+			<div class="wthree-heading about-heading">
+				<h3>About Us</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at nisi velit. Ut id velit ex. Donec quis sapien gravida, rutrum metus eu, viverra elit. Sed sodales commodo ex, id porttitor leo ullamcorper nec.</p>
+			</div>
+			<div class="about-bottom-grids">
+				<div class="col-md-6 about-bottom-left">
+					<h4>Morbi convallis urna sit</h4>
+					<p>Vivamus sit amet molestie orci. Nullam porttitor porta lobortis. Mauris semper feugiat varius. Mauris nec ligula 
+						diam. Cras ullamcorper lorem eu sapien viverra cursus. Pellentesque commodo libero eget malesuada blandit. 
+					</p>
+				</div>
+				<div class="col-md-6 about-bottom-left about-bottom-right">
+					<h4>Morbi convallis urna sit</h4>
+					<p>Vivamus sit amet molestie orci. Nullam porttitor porta lobortis. Mauris semper feugiat varius. Mauris nec ligula 
+						diam. Cras ullamcorper lorem eu sapien viverra cursus. Pellentesque commodo libero eget malesuada blandit. 
+					</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="about-bottom-grids w3ls-about-bottom-grids">
+				<div class="col-md-6 about-bottom-left">
+					<h4>Morbi convallis urna sit</h4>
+					<p>Vivamus sit amet molestie orci. Nullam porttitor porta lobortis. Mauris semper feugiat varius. Mauris nec ligula 
+						diam. Cras ullamcorper lorem eu sapien viverra cursus. Pellentesque commodo libero eget malesuada blandit. 
+					</p>
+				</div>
+				<div class="col-md-6 about-bottom-left about-bottom-right">
+					<h4>Morbi convallis urna sit</h4>
+					<p>Vivamus sit amet molestie orci. Nullam porttitor porta lobortis. Mauris semper feugiat varius. Mauris nec ligula 
+						diam. Cras ullamcorper lorem eu sapien viverra cursus. Pellentesque commodo libero eget malesuada blandit. 
+					</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //about-bottom -->
+	<!-- offer -->
+	<div class="offer">
+		<div class="col-md-5 offer-left">
+			
+		</div>
+		<div class="col-md-7 offer-right">
+			<div class="wthree-heading offer-heading">
+				<h3>What We Offer</h3>
+			</div>
+			<h4>Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel nibh venenatis purus rhoncus egestas ac imperdiet odio. Maecenas non augue ac quam viverra interdum. Cras eget sollicitudin dui. Nulla a tortor elementum, suscipit sem vel, posuere dui. Nunc vitae quam dignissim, fringilla nisi ut, suscipit nisl. Nulla sed mauris ut est suscipit efficitur sit amet quis lorem. Nulla convallis dui vel sollicitudin rhoncus. Suspendisse blandit ex ac purus dictum aliquet. Fusce facilisis mi et nunc porttitor laoreet. Sed ut erat sapien. </p>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- //offer -->
+	<!-- gallery -->
+	<div class="gallery" id="gallery">
+		<div class="container">
+			<div class="wthree-heading">
+				<h3>Gallery</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at nisi velit. Ut id velit ex. Donec quis sapien gravida, rutrum metus eu, viverra elit. Sed sodales commodo ex, id porttitor leo ullamcorper nec.</p>
+			</div>
+			<div class=" w3-agileits-gallery">
+				<div class="gallery-bg">
+					<div class="gallery-bg-text effect-2">
+						<a href="images/g1.jpg" class="big"><img src="images/g1.jpg" alt="" title="Maecenas aliquam nec arcu at efficitur. Praesent cursus aliquam erat a commodo." /></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g2.jpg"><img src="images/g2.jpg" alt="" title="Donec dictum nisi sit amet ex volutpat interdum."/></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g3.jpg"><img src="images/g3.jpg" alt="" title="Ut dignissim ipsum dolor, in scelerisque neque commodo sit amet."/></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g4.jpg"><img src="images/g4.jpg" alt="" title="Nulla molestie nulla et dolor commodo pharetra."/></a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g5.jpg"><img src="images/g5.jpg" alt="" title="Maecenas aliquam nec arcu at efficitur. Praesent cursus aliquam erat a commodo."/></a>
+					</div>
+				</div>
+				<div class="gallery-bg">
+					<div class="gallery-bg-text effect-2">
+						<a href="images/g7.jpg" class="big"><img src="images/g7.jpg" alt="" title="Maecenas aliquam nec arcu at efficitur. Praesent cursus aliquam erat a commodo." /></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g6.jpg"><img src="images/g6.jpg" alt="" title="Maecenas aliquam nec arcu at efficitur."/></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g8.jpg"><img src="images/g8.jpg" alt="" title="Nulla molestie nulla et dolor commodo pharetra."/></a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				
+				<div class="gallery-bg">
+					<div class="gallery-bg-text effect-2">
+						<a href="images/g9.jpg" class="big"><img src="images/g9.jpg" alt="" title="Maecenas aliquam nec arcu at efficitur. Praesent cursus aliquam erat a commodo." /></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g2.jpg"><img src="images/g2.jpg" alt="" title="Maecenas aliquam nec arcu at efficitur. Praesent cursus aliquam erat a commodo."/></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g5.jpg"><img src="images/g5.jpg" alt="" title="Maecenas aliquam nec arcu at efficitur."/></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g6.jpg"><img src="images/g6.jpg" alt="" title="Nulla molestie nulla et dolor commodo pharetra."/></a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/simple-lightbox.js"></script>
+	<script>
+				$(function(){
+					var $gallery = $('.gallery a').simpleLightbox();
+					
+					$gallery.on('show.simplelightbox', function(){
+						console.log('Requested for showing');
+					})
+					.on('shown.simplelightbox', function(){
+						console.log('Shown');
+					})
+					.on('close.simplelightbox', function(){
+						console.log('Requested for closing');
+					})
+					.on('closed.simplelightbox', function(){
+						console.log('Closed');
+					})
+					.on('change.simplelightbox', function(){
+						console.log('Requested for change');
+					})
+					.on('next.simplelightbox', function(){
+						console.log('Requested for next');
+					})
+					.on('prev.simplelightbox', function(){
+						console.log('Requested for prev');
+					})
+					.on('nextImageLoaded.simplelightbox', function(){
+						console.log('Next image loaded');
+					})
+					.on('prevImageLoaded.simplelightbox', function(){
+						console.log('Prev image loaded');
+					})
+					.on('changed.simplelightbox', function(){
+						console.log('Image changed');
+					})
+					.on('nextDone.simplelightbox', function(){
+						console.log('Image changed to next');
+					})
+					.on('prevDone.simplelightbox', function(){
+						console.log('Image changed to prev');
+					})
+					.on('error.simplelightbox', function(e){
+						console.log('No image found, go to the next/prev');
+						console.log(e);
+					});
+				});
+	</script>
+	<!-- //gallery -->
+	<!-- testimonial -->
+	<div class="testimonial">
+		<div class="container">
+			<div class="wthree-heading">
+				<h3>Testimonials</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at nisi velit. Ut id velit ex. Donec quis sapien gravida, rutrum metus eu, viverra elit. Sed sodales commodo ex, id porttitor leo ullamcorper nec.</p>
+			</div>
+			<div class="testimonial-grids">
+				<div class="col-md-4 testimonial-grid">
+					<h4>Customer Says</h4>
+					<div class="testimonial-info">
+						<p><span>"</span> Quisque varius, nibh ac feugiat interdum, libero massa laoreet tellus, nec congue lorem arcu a nunc. Praesent quis felis eget</p>
+						<h5>EMMA S.</h5>
+					</div>
+					<div class="testimonial-info">
+						<p><span>" </span> Vestibulum et consequat justo. Maecenas ultrices malesuada leo porta venenatis. Sed sit amet diam facilisis, interdum tellus nec</p>
+						<h5>JOHN D.</h5>
+					</div>
+					<div class="testimonial-info">
+						<p><span>" </span> Cras elementum sed mi sit amet ullamcorper. Cras sed felis a enim rutrum lobortis a eu nisi. Curabitur justo libero, hendrerit at</p>
+						<h5>EMMA S.</h5>
+					</div>
+				</div>
+				<div class="col-md-8 testimonial-grid-right">
+					<h4>Latest Offers</h4>
+					<div class="Works-grids">
+						<div class="col-md-4 Works-grid">
+							<img src="images/3.jpg" class="img-responsive" alt=""/>
+						<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat.</p>
+						</div>
+						<div class="col-md-4 Works-grid">
+							<img src="images/4.jpg" class="img-responsive" alt=""/>
+						<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat.</p>
+						</div>
+						<div class="col-md-4 Works-grid">
+							<img src="images/5.jpg" class="img-responsive" alt=""/>
+						<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat.</p>
+						</div>
+							<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //testimonial -->
+	<!-- team -->
+	<div class="team jarallax" id="team">
+		<div class="team-dot">
+			<div class="container">
+				<div class="wthree-heading about-heading">
+					<h3>Fantastic Team</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at nisi velit. Ut id velit ex. Donec quis sapien gravida, rutrum metus eu, viverra elit. Sed sodales commodo ex, id porttitor leo ullamcorper nec.</p>
+				</div>
+				<div class="agile-team-grids">
+					<div class="col-sm-3 team-grid">
+						<div class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="t1.jpg" alt="utkarsh" />
+								</div>
+								<div class="back">
+									<h4>UTKARSH YADAV</h4>
+									<p>BTECH 2Nd YEAR </p>
+									<div class="w3l-social">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-rss"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				
+					<div class="col-sm-3 team-grid">
+						<div class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="t4.jpg" alt="" height="350px" width="4500%"/>
+								</div>
+								<div class="back">
+									<h4>VUCHURU PURUSHOTHAM</h4>
+									<p>BTECH 2ND YEAR</p>
+									<div class="w3l-social">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-rss"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //team -->
+	<!-- blog -->
+	<div id="blog" class="blog">
+		<div class="container">  
+			<div class="wthree-heading">
+				<h3>BLOGS</h3>
+				<p>
+<?php
+$sql = "SELECT * FROM feedback where rating>=4";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) 
+{
+while($row = $result->fetch_assoc()) 
+	{
+     echo "<h3>".$row["suggestion"];	;
+	 }
+}
+else {
+    echo "<------HAVEN'T BOOK ANY RIDE BOOK NOW ------>";
+}
+$conn->close();
+?>
+				</p></div>
+			<div class="blog-agileinfo">
+				<div class="col-md-6 blog-w3grid-img">
+					<a href="#myModal" data-toggle="modal" class="wthree-blogimg">  
+						<img src="images/4.jpg" class="img-responsive" alt=""/>
+					</a>  
+				</div>
+				<div class="col-md-6 blog-w3grid-text"> 
+					<h4><a href="#myModal" data-toggle="modal">Soluta vum nobis</a></h4>
+					<h6>By <a href="#"> Admin</a> - Nov 25th, 2016 </h6>
+					<p>Sed interdum interdum accumsan. Aenean nec purus ac orci finibus facilisis. In sit amet placerat nisl, in auctor sapien. Donec ultricies faucibus ante in mattis earum rerum delectus in auctor sapien. </p>
+				</div> 
+				<div class="clearfix"> </div>
+			</div> 
+			<div class="blog-agileinfo blog-agileinfo-mdl">
+				<div class="col-md-6 blog-w3grid-img blog-img-rght">
+					<a href="#myModal" data-toggle="modal" class="wthree-blogimg">  
+						<img src="images/6.jpg" class="img-responsive" alt=""/>
+					</a>  
+				</div>
+				<div class="col-md-6 blog-w3grid-text"> 
+					<h4><a href="#myModal" data-toggle="modal">Aenean nec purus ac</a></h4>
+					<h6>By <a href="#"> Admin</a> - Dec 31st, 2015 </h6>
+					<p>Sed interdum interdum accumsan. Aenean nec purus ac orci finibus facilisis. In sit amet placerat nisl, in auctor sapien. Donec ultricies faucibus ante in mattis earum rerum hic a sapiente delectus. </p>
+				</div> 
+				<div class="clearfix"> </div>
+			</div> 
+			<div class="blog-agileinfo">
+				<div class="col-md-6 blog-w3grid-img">
+					<a href="#myModal" data-toggle="modal" class="wthree-blogimg">  
+						<img src="images/5.jpg" class="img-responsive" alt=""/>
+					</a>  
+				</div>
+				<div class="col-md-6 blog-w3grid-text"> 
+					<h4><a href="#myModal" data-toggle="modal">Mattis earum rerum</a></h4>
+					<h6>By <a href="#"> Admin</a> - Dec 25th, 2016 </h6>
+					<p>Sed interdum interdum accumsan. Aenean nec purus ac orci finibus facilisis. In sit amet placerat nisl, in auctor sapien. Donec ultricies faucibus ante rerum hic a sapiente delectus in auctor sapien. </p>
+				</div> 
+				<div class="clearfix"> </div>
+			</div> 
+		</div>
+	</div>
+	<!-- //blog --> 
+	<!-- rate -->
+	<div class="rate jarallax" id="rate">
+		<div class="container">
+			<div class="wthree-heading about-heading">
+				<h3>Rates for Go Taxi</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at nisi velit. Ut id velit ex. Donec quis sapien gravida, rutrum metus eu, viverra elit. Sed sodales commodo ex, id porttitor leo ullamcorper nec.</p>
+			</div>
+			<div class="agileinfo-rate-grids">
+				<div class="agileinfo-rate-grid-nfo">
+					<div class="agileinfo-rate-grid">
+						<ul>
+							<li>First 30 Min</li>
+							<li>$4</li>
+						</ul>
+					</div>
+					<div class="agileinfo-rate-grid">
+						<ul>
+							<li>More Than 30 Min</li>
+							<li>$5</li>
+						</ul>
+					</div>
+					<div class="agileinfo-rate-grid">
+						<ul>
+							<li>Out Of City</li>
+							<li>+$4/M</li>
+						</ul>
+					</div>
+					<div class="agileinfo-rate-grid">
+						<ul>
+							<li>waiting over 10 min</li>
+							<li>$2</li>
+						</ul>
+					</div>
+					<div class="agileinfo-rate-grid">
+						<ul>
+							<li>Baby chair</li>
+							<li>+$1</li>
+						</ul>
+					</div>
+					<div class="agileinfo-rate-grid">
+						<ul>
+							<li>1 animal</li>
+							<li>+$4</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //rate -->
+	<!-- contact -->
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="wthree-heading">
+				<h3>Contact Us</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at nisi velit. Ut id velit ex. Donec quis sapien gravida, rutrum metus eu, viverra elit. Sed sodales commodo ex, id porttitor leo ullamcorper nec.</p>
+			</div>
+			<div class="address">
+				<div class="col-sm-4 address-grids">
+					<h4>Address :</h4>
+					<p>Eiusmod Tempor inc<br>
+						<span>St Dolore Place,</span>
+						San Francisco 56777
+					</p>	
+				</div>
+				<div class="col-sm-4 address-grids">
+					<h4>Phone :</h4>
+					<p>+2 123 456 789</p>
+					<p>+2 987 654 321</p>
+				</div>
+				<div class="col-sm-4 address-grids">
+					<h4>Email :</h4>
+					<p><a href="mailto:example@email.com">mail@example.com</a></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="contact-form">
+				<h4>Contact Form</h4>
+				<form action="#" method="post">
+					<div class="fields-grid">
+						<div class="styled-input agile-styled-input-top">
+							<input type="text" name="Full Name" required="">
+							<label>Full Name</label>
+							<span></span>
+						</div>
+						<div class="styled-input agile-styled-input-top">
+							<input type="text" name="Phone" required=""> 
+							<label>Phone</label>
+							<span></span>
+						</div>
+						<div class="styled-input">
+							<input type="email" name="Email" required=""> 
+							<label>Email</label>
+							<span></span>
+						</div> 
+						<div class="styled-input">
+							<input type="text" name="Subject" required="">
+							<label>Subject</label>
+							<span></span>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="styled-input textarea-grid">
+						<textarea name="Message" required=""></textarea>
+						<label>Message</label>
+						<span></span>
+					</div>	 
+					<input type="submit" value="SEND">
+				</form>
+			</div>
+			<div class="agileits-w3layouts-map">
+				<h4>Location</h4>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100949.24429313939!2d-122.44206553967531!3d37.75102885910819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1472190196783" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<!-- //contact -->
+	<!-- footer -->
+		<footer>
+			<div class="w3ls-footer-grids">
+				<div class="container">
+					<div class="col-md-3 w3l-footer one">
+						<h3>About Company</h3>
+						<p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of Latin at Hampden-Sydney College in Virginia from a Lorem Ipsum passage, undoubtable source.</p>
+						<p class="adam">- Mark Thomson, CEO</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-3 w3l-footer one tweet">
+						<h3>Tweets</h3>
+						<ul>
+							<li>
+								<a href="#"><i class="fa fa-twitter"></i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus.
+								<i>http//example.com</i></a>
+								<span>About 15 minutes ago<span>
+							</span></span></li>
+							<li>
+								<a href="#"> <i class="fa fa-twitter"></i>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit. 
+								<i>http//example.com</i></a>
+								<span>About a day ago<span>
+							</span></span></li>
+						</ul>
+					</div>
+					<div class="col-md-3 w3l-footer two">
+						<h3>Keep Connected</h3>
+						<ul>
+							<li><a class="fb" href="#"><i class="fa fa-facebook"></i>Like us on Facebook</a></li>
+							<li><a class="fb1" href="#"><i class="fa fa-twitter"></i>Follow us on Twitter</a></li>
+							<li><a class="fb2" href="#"><i class="fa fa-google-plus"></i>Add us on Google Plus</a></li>
+							<li><a class="fb3" href="#"><i class="fa fa-dribbble"></i>Follow us on Dribbble</a></li>
+							<li><a class="fb4" href="#"><i class="fa fa-pinterest-p"></i>Follow us on Pinterest</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 w3l-footer three">
+						<h3>Contact Information</h3>
+						<ul>
+							<li><i class="fa fa-map-marker"></i><p>The company name <span>Lorem ipsum dolor,</span>Polo Street. </p><div class="clearfix"></div> </li>
+							<li><i class="fa fa-phone"></i><p>1234567890</p> <div class="clearfix"></div> </li>
+							<li><i class="fa fa-envelope-o"></i><a href="mailto:info@example.com">info@example.com</a> <div class="clearfix"></div></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="copy-right-grids">
+				<div class="container">
+					<div class="copy-left">
+						<p class="footer-gd">© 2017 Go Taxi. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">W3layouts</a></p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</footer>
+	<!-- //footer -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/jarallax.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+</body>	
+</html>
