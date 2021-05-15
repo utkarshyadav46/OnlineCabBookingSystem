@@ -6,8 +6,13 @@ This is an online cab booking software developed in following technology stack
 #### 2. Database used - MySQL
 
 
-## Sign Up Screen
-## Login Screen
+## Sign Up Screenshot
+
+![alt text](https://github.com/utkarshyadav46/Online-Cab-booking-System/blob/master/CAB%20BOOKING%20PROECT%20(DBMS)/CAB%20BOOKING%20PROECT%20(DBMS)/Screenshot%20(10).png?raw=true)
+
+
+
+## Login Screenshot
 
 ![alt text](https://github.com/utkarshyadav46/Online-Cab-booking-System/blob/master/CAB%20BOOKING%20PROECT%20(DBMS)/CAB%20BOOKING%20PROECT%20(DBMS)/Screenshot%20(10).png?raw=true)
 
@@ -19,4 +24,4 @@ This is an online cab booking software developed in following technology stack
 
 ## Navigation Page
 
-![alt text](https://github.com/utkarshyadav46/Online-Cab-booking-System/blob/master/CAB%20BOOKING%20PROECT%20(DBMS)/CAB%20BOOKING%20PROECT%20(DBMS)/Screenshot%20(12).png?raw=true)
+![alt text](https://github.com/utkarshyadav46/Online-Cab-booking-System/blob/master/CAB%20BOOKING%20PROECT%20(DBMS)/CAB%20BOOKING%20PROECT%20(DBMS)/Screenshot%20(16).png?raw=true)
